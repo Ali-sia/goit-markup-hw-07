@@ -1,8 +1,3 @@
-header {
-  background-color: #f0f;
-  color: antiquewhite;
-}
-
-container {
-  width: 1600px;
-}
+@import './utils/variables';
+@import './base/normalise';
+@import './base/common';
