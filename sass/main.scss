@@ -2,5 +2,11 @@
 @import './utils/mixins';
 @import './base/normalise';
 @import './base/common';
+@import './buttons';
 @import './logo';
 @import './header';
+@import './hero';
+
+.backdrop {
+  background-color: #f0f;
+}
