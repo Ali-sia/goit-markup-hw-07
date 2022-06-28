@@ -496,6 +496,14 @@ button {
   border-radius: 4px;
 }
 
+.occupation {
+  padding-bottom: 94px;
+}
+
+.occupation-list {
+  display: flex;
+}
+
 .backdrop {
   background-color: #f0f;
 }/*# sourceMappingURL=main.css.map */
