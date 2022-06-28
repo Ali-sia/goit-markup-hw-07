@@ -1,4 +1,6 @@
 .logo {
+  padding: 24px 0 25px 0;
+
   font-family: $main-font;
   font-weight: 700;
   font-size: 26px;
@@ -14,6 +16,10 @@
 
   &__item--footer {
     color: $logo-footer-color;
+  }
+
+  & > &__item {
+    @include hover-dely(color);
   }
 
   &:hover > &__item {
