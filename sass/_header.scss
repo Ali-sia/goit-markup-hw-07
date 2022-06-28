@@ -7,6 +7,24 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  &__link {
+    padding: 32px 0;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: $navigation-color;
+
+    @include hover-dely(color);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
 }
 
 .site-navigation {
@@ -14,14 +32,58 @@
 
   margin-left: 93px;
 
-  &__link {
-    padding: 32px 0;
-  }
-
   &__item:not(:last-child) {
     margin-right: 50px;
+  }
+
+  &__link {
+    position: relative;
+  }
+
+  &__link--active::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    background-color: $accent-color;
+    border-radius: 2px;
   }
 }
 
 .contact-navigation {
+  display: flex;
+
+  margin-left: auto;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__item {
+    fill: $primary-text-color;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $primary-text-color;
+  }
+
+  //   &__link:hover,
+  //   &__link:focus {
+  //     fill: $accent-color;
+  //   }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
