@@ -52,3 +52,13 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.title {
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}

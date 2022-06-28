@@ -310,6 +310,15 @@ button {
   overflow: hidden;
 }
 
+.title {
+  margin-bottom: 50px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
 .button {
   padding: 6px 22px;
   min-width: 73px;
@@ -452,6 +461,39 @@ button {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.features {
+  padding: 94px 0;
+}
+
+.features-list {
+  display: flex;
+}
+.features-list__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-list__caption {
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.features-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.features-list__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 .backdrop {
