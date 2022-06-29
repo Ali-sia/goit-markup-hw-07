@@ -3,6 +3,7 @@ body {
   color: $primary-text-color;
 
   font-family: $main-font;
+  font-size: 14px;
   letter-spacing: 0.03em;
 }
 
@@ -26,6 +27,11 @@ ul {
 
 button {
   display: inline-block;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 .container {

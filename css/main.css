@@ -264,6 +264,7 @@ body {
   background-color: #ffffff;
   color: #757575;
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
   letter-spacing: 0.03em;
 }
 
@@ -287,6 +288,11 @@ ul {
 
 button {
   display: inline-block;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 .container {
@@ -502,6 +508,29 @@ button {
 
 .occupation-list {
   display: flex;
+}
+.occupation-list__thumb {
+  position: relative;
+}
+.occupation-list__caption {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+.occupation-list__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .backdrop {
