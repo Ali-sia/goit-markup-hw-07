@@ -637,16 +637,51 @@ address {
   padding: 60px 0;
   background-color: #2f303a;
 }
+.footer__title {
+  display: block;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
 
 .container--footer {
   display: flex;
 }
 
+.address {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.address__text {
+  display: block;
+  margin-bottom: 9px;
+  color: #ffffff;
+}
+.address__link {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address__link:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address__link:hover, .address__link:focus {
+  color: rgba(33, 150, 243, 0.6);
+}
+
+.join {
+  padding-top: 15px;
+}
+
+.mailing {
+  padding-top: 15px;
+}
+
 .address,
 .join,
 .mailing {
-  display: flex;
-  min-width: 300px;
   outline: 2px solid salmon;
 }
 

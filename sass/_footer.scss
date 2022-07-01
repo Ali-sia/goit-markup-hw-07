@@ -2,17 +2,64 @@
   padding: 60px 0;
 
   background-color: $footer-background-color;
+
+  &__title {
+    display: block;
+
+    // margin-top: 15px;
+
+    color: $footer-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .container--footer {
   display: flex;
 }
 
+.address {
+  font-size: 14px;
+  line-height: 1.71;
+
+  &__text {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: $footer-color;
+  }
+
+  &__link {
+    display: block;
+
+    color: $footer-link-color;
+
+    @include hover-dely(color);
+  }
+
+  &__link:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $footer-hover-color;
+  }
+}
+
+.join {
+  padding-top: 15px;
+}
+
+.mailing {
+  padding-top: 15px;
+}
+
 .address,
 .join,
 .mailing {
-  display: flex;
-  min-width: 300px;
-
   outline: 2px solid salmon;
 }
