@@ -577,6 +577,17 @@ address {
   background-color: #2196f3;
 }
 
+.social-list__item--footer {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-list__item--footer .social-list__link {
+  fill: #ffffff;
+}
+.social-list__item--footer .social-list__link:hover, .social-list__item--footer .social-list__linl:focus {
+  background-color: #2196f3;
+}
+
 .team {
   padding: 94px 0;
   background-color: #f5f4fa;

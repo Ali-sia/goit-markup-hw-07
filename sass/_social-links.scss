@@ -30,14 +30,18 @@
   }
 }
 
-// .social-list {
-//   &--footer &__link {
-//     color: $social-icon-footer;
-//     background-color: $social-background-footer;
-//   }
+.social-list {
+  &__item--footer {
+    border-radius: 50%;
 
-//   &--footer &__link:hover,
-//   &--footer &__linl:focus {
-//     background-color: $accent-color;
-//   }
-// }
+    background-color: $social-background-footer;
+  }
+  &__item--footer &__link {
+    fill: $footer-color;
+  }
+
+  &__item--footer &__link:hover,
+  &__item--footer &__linl:focus {
+    background-color: $accent-color;
+  }
+}
