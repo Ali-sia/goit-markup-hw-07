@@ -363,6 +363,16 @@ address {
   background-color: #188ce8;
 }
 
+.button--footer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.button--footer__icon {
+  margin-left: 10px;
+  fill: #ffffff;
+}
+
 .logo {
   display: inline-block;
   padding: 24px 0 25px 0;
@@ -639,6 +649,7 @@ address {
 }
 .footer__title {
   display: block;
+  margin-bottom: 20px;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
@@ -673,16 +684,47 @@ address {
 
 .join {
   padding-top: 15px;
+  margin-left: 80px;
 }
 
 .mailing {
   padding-top: 15px;
+  margin-left: auto;
+  min-width: 570px;
 }
-
-.address,
-.join,
-.mailing {
-  outline: 2px solid salmon;
+.mailing__input {
+  margin-right: 12px;
+  padding: 15px 0 15px 16px;
+  width: 358px;
+  height: 50px;
+  color: #ffffff;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mailing__input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+.mailing__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+.mailing__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+.mailing__input:focus {
+  outline: none;
+  border: 1px solid #2196f3;
 }
 
 .backdrop {
