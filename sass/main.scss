@@ -8,14 +8,9 @@
 @import './hero';
 @import './features';
 @import './occupation';
-// створити стилі посилань для футера
 @import './social-links.scss';
-// створити стилі посилань для футера
 @import './team';
 @import './clients';
 @import './footer';
 @import './portfolio';
-
-.backdrop {
-  background-color: #f0f;
-}
+@import './modal-window';
