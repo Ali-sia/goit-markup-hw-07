@@ -44,6 +44,8 @@ textarea {
   color: inherit;
   border: 1px solid $border-input-color;
   border-radius: 4px;
+
+  @include hover-dely(border);
 }
 
 input:focus,
