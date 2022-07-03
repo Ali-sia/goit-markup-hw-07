@@ -85,8 +85,7 @@
     color: $footer-placeholder-color;
   }
 
-  &__input:focus {
-    outline: none;
-    border: 1px solid $accent-color;
-  }
+  // &__input:focus {
+  //   border: 1px solid $accent-color;
+  // }
 }
